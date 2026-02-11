@@ -4,17 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecomerce.Domain.Auth
+namespace Ecomerce.Domain.Auth.DTOs
 {
-    public class User
+    public class RegisterUserDto
     {
-        public string Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Salt { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public List<Role> Roles { get; set; }
-
     }
 }
