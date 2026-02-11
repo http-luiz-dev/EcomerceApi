@@ -14,8 +14,9 @@ namespace Ecomerce.Persistence.DependencyInjection
     {
         public static void ResolvePersistenceDependencyInjection(this IServiceCollection services, IConfiguration configuration)
         {
+            string conStr = configuration["ConnectionStrings:DefaultConnection"];
             services.AddDbContext<EcommerceDbContext>(options =>
-                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(conStr));
         }
     }
 }
