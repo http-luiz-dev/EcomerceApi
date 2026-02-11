@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ecomerce.Domain.Auth
 {
-    public class User
+    public class Role
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Salt { get; set; }
-        public List<Role> Roles { get; set; }
-
     }
 }
